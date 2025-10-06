@@ -1,0 +1,2 @@
+# node-red-bmw-cardata
+After struggling to find an alternative to the discontinued API used in the [bimmer_connected](https://github.com/bimmerconnected/bimmer_connected) project, I took heavy inspiration from the [bmw-cardata-home-assitant](https://github.com/JjyKsi/bmw-cardata-ha) to integrate the cardata api in nodered. I did **not** create a nodered package but am rather sharing the flows that i use to interact with the new API.
