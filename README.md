@@ -21,6 +21,8 @@ functionGlobalContext: {
 }
 ```
 
+
+### Car
 You also need your cars VIN
 
 
@@ -34,23 +36,31 @@ To import the flows copy the json data below, click on the hamburger menu in the
 
 ## Usage
 
+### Adding Client ID and VIN
 After importing the flows paste in the earlier copied client_id in the 3 change nodes that are called `YOUR CLIENT_ID` and paste in your cars VIN in the `YOUR VIN` Inject (msg.url field).
 
-Now use the `Authenticate Device` Inject to generate a bunch of stuff, we focus on the user_code which is needed to manually authenticate the access. Visit the url shown in the debug panel, log in and paste the user_code in the text input.
+### [Authenticate Device](https://bmw-cardata.bmwgroup.com/customer/public/api-documentation/Id-Technical-registration_Step-3)
+Hit the inject once, it returns a bunch of stuff, we focus on the user_code which is needed to manually authenticate the access. Visit the url shown in the debug panel, log in and paste the user_code in the text input.
 
-You can move on to the `Generate Token` Inject to generate your first access token.
+### Generate Token
+Use the `Generate Token` Inject to generate your first access token.
 
+### Refresh Token
 You do not need to use the `Refresh Token` Inject manually, it is set to run every 40 minutes.
 
-Since you need to create a container in which you set the telemetry data keys that are going to be returned everytime you poll the API you need to use the `Create Container` Inject. Feel free to edit the value of the msg.payload.technicalDescriptors key to adjust the telemetric data keys that are getting polled. The possible keys are found in [this catalogue](https://www.bmw.co.uk/en-gb/mybmw/public/cardata-telematic-catalogue), just turn on the `Expanded View` toggle to see the actual `Technical identifiers`.
+### Create Container
+Trigger the `Create Container` inject to create a via the API's POST endpoint.
 
+### Polling Container
 After creating your container you can start pulling data from the API, use the `YOUR VIN` Inject to poll the API with the container you created before, this is also set to run every 30 minutes. Pay attention to the daily API rate limit of 50 polls per day!
-
 
 ## Sidenote
 
+### Incompatibility
 These flows were exported from Node-RED version 4.0.5 so look out for any incompatibility when using a different version.
 
+### Create Container
+Since you need to create a container in which you set the telemetry data keys that are going to be returned everytime you poll the API you need to use the `Create Container` Inject. Feel free to edit the value of the msg.payload.technicalDescriptors key to adjust the telemetric data keys that are getting polled. The possible keys are found in [this catalogue](https://www.bmw.co.uk/en-gb/mybmw/public/cardata-telematic-catalogue), just turn on the `Expanded View` toggle to see the actual `Technical identifiers`.
 
 ## Credits
 
