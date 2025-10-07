@@ -39,19 +39,19 @@ To import the flows copy the json data below, click on the hamburger menu in the
 ### Adding Client ID and VIN
 After importing the flows paste in the earlier copied client_id in the 3 change nodes that are called `YOUR CLIENT_ID` and paste in your cars VIN in the `YOUR VIN` Inject (msg.url field).
 
-### [Authenticate Device](https://bmw-cardata.bmwgroup.com/customer/public/api-documentation/Id-Technical-registration_Step-3)
+1. ### [Authenticate Device](https://bmw-cardata.bmwgroup.com/customer/public/api-documentation/Id-Technical-registration_Step-3)
 Hit the inject once, it returns a bunch of stuff, we focus on the user_code which is needed to manually authenticate the access. Visit the url shown in the debug panel, log in and paste the user_code in the text input.
 
-### Generate Token
+2. ### Generate Token
 Use the `Generate Token` Inject to generate your first access token.
 
 ### [Refresh Token](https://bmw-cardata.bmwgroup.com/customer/public/api-documentation/Id-Technical-registration_Step-4)
 You do not need to use the `Refresh Token` Inject manually, it is set to run every 40 minutes.
 
-### [Create Container](https://bmw-cardata.bmwgroup.com/customer/public/api-documentation/Id-CarData-API_Additional-information)
+3. ### [Create Container](https://bmw-cardata.bmwgroup.com/customer/public/api-documentation/Id-CarData-API_Additional-information)
 Trigger the `Create Container` inject to create a via the API's POST endpoint.
 
-### Polling Container
+4. ### Polling Container
 After creating your container you can start pulling data from the API, use the `YOUR VIN` Inject to poll the API with the container you created before, this is also set to run every 30 minutes. Pay attention to the daily API rate limit of 50 polls per day!
 
 ## Sidenote
