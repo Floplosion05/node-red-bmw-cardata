@@ -49,20 +49,18 @@ Use the `Generate Token` Inject to generate your first access token.
 You do not need to use the `Refresh Token` Inject manually, it is set to run every 40 minutes.
 
 4. ### [Create Container](https://bmw-cardata.bmwgroup.com/customer/public/api-documentation/Id-CarData-API_Additional-information)
-Trigger the `Create Container` inject to create a via the API's POST endpoint.
+Trigger the `Create Container` inject to create a container via the API's POST endpoint.
 
 5. ### Polling Container
 After creating your container you can start pulling data from the API, use the `YOUR VIN` Inject to poll the API with the container you created before, this is also set to run every 30 minutes. Pay attention to the daily API rate limit of 50 polls per day!
 
-## Sidenote
-
-### Incompatibility
+## Incompatibility
 These flows were exported from Node-RED version 4.0.5 so look out for any incompatibility when using a different version.
 
-### Create Container
+## Create Container
 Since you need to create a container in which you set the telemetry data keys that are going to be returned everytime you poll the API you need to use the `Create Container` Inject. Feel free to edit the value of the msg.payload.technicalDescriptors key to adjust the telemetric data keys that are getting polled. The possible keys are found in [this catalogue](https://www.bmw.co.uk/en-gb/mybmw/public/cardata-telematic-catalogue), just turn on the `Expanded View` toggle to see the actual `Technical identifiers`.
 
-### Local files
+## Security Disclaimer
 I Implemented the functionality to save and later on restore the refresh token and containerId in local files respectively in case they are not found in the global variable e.g. after a restart of Node-RED. **So this project stores access tokens locally, be aware of this in case you do not want it!** To remove this functionality remove the `./refresh_token` and `./containerId` file write nodes.
 
 ## Credits
