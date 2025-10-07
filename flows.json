@@ -5,8 +5,8 @@
         "z": "8e49a2eb.1c1a3",
         "name": "Cardata",
         "info": "",
-        "x": 1330,
-        "y": 720,
+        "x": 1370,
+        "y": 560,
         "wires": []
     },
     {
@@ -41,8 +41,8 @@
         "topic": "",
         "payload": "{\"grant_type\":\"refresh_token\"}",
         "payloadType": "json",
-        "x": 1380,
-        "y": 980,
+        "x": 1420,
+        "y": 820,
         "wires": [
             [
                 "b9a406ec27382ec0"
@@ -65,8 +65,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 2350,
-        "y": 980,
+        "x": 1970,
+        "y": 800,
         "wires": [
             [
                 "93dbe7353553d452"
@@ -86,8 +86,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2680,
-        "y": 960,
+        "x": 2400,
+        "y": 800,
         "wires": []
     },
     {
@@ -116,8 +116,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1590,
-        "y": 980,
+        "x": 1630,
+        "y": 820,
         "wires": [
             [
                 "c9e9643d79ef500e"
@@ -144,8 +144,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2510,
-        "y": 980,
+        "x": 2150,
+        "y": 800,
         "wires": [
             [
                 "e9fcc17a175357b2"
@@ -169,8 +169,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2320,
-        "y": 780,
+        "x": 2360,
+        "y": 620,
         "wires": []
     },
     {
@@ -189,8 +189,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1970,
-        "y": 800,
+        "x": 2010,
+        "y": 640,
         "wires": [
             [
                 "13a3e3046948255c"
@@ -229,8 +229,8 @@
         "topic": "",
         "payload": "{\"grant_type\":\"urn:ietf:params:oauth:grant-type:device_code\"}",
         "payloadType": "json",
-        "x": 1380,
-        "y": 900,
+        "x": 1420,
+        "y": 740,
         "wires": [
             [
                 "aac467ac0be4e0d5"
@@ -270,8 +270,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1590,
-        "y": 900,
+        "x": 1630,
+        "y": 740,
         "wires": [
             [
                 "4a5f528c45341778"
@@ -291,8 +291,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2120,
-        "y": 880,
+        "x": 2160,
+        "y": 720,
         "wires": []
     },
     {
@@ -311,8 +311,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1790,
-        "y": 900,
+        "x": 1830,
+        "y": 740,
         "wires": [
             [
                 "02a36f8eba4d96bd"
@@ -338,8 +338,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2300,
-        "y": 820,
+        "x": 2340,
+        "y": 660,
         "wires": [
             []
         ]
@@ -364,8 +364,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2130,
-        "y": 800,
+        "x": 2170,
+        "y": 640,
         "wires": [
             [
                 "66b17ca35f7dad57"
@@ -396,8 +396,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1950,
-        "y": 900,
+        "x": 1990,
+        "y": 740,
         "wires": [
             [
                 "fb5a7bfd09e9244f"
@@ -455,8 +455,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2120,
-        "y": 920,
+        "x": 2160,
+        "y": 760,
         "wires": [
             [
                 "76f6b5ef01021c13"
@@ -510,8 +510,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2680,
-        "y": 1000,
+        "x": 2400,
+        "y": 840,
         "wires": [
             [
                 "1546b7dd69794a29"
@@ -550,8 +550,8 @@
         "topic": "",
         "payload": "{\"name\":\"battery\",\"purpose\":\"Get battery info\",\"technicalDescriptors\":[\"vehicle.drivetrain.batteryManagement.header\",\"vehicle.drivetrain.electricEngine.charging.acAmpere\",\"vehicle.drivetrain.electricEngine.charging.acVoltage\",\"vehicle.powertrain.electric.battery.preconditioning.automaticMode.statusFeedback\",\"vehicle.vehicle.avgAuxPower\",\"vehicle.powertrain.tractionBattery.charging.port.anyPosition.flap.isOpen\",\"vehicle.powertrain.tractionBattery.charging.port.anyPosition.isPlugged\",\"vehicle.drivetrain.electricEngine.charging.timeToFullyCharged\",\"vehicle.powertrain.electric.battery.charging.acLimit.selected\",\"vehicle.drivetrain.electricEngine.charging.method\",\"vehicle.body.chargingPort.plugEventId\",\"vehicle.drivetrain.electricEngine.charging.phaseNumber\",\"vehicle.trip.segment.end.drivetrain.batteryManagement.hvSoc\",\"vehicle.trip.segment.accumulated.drivetrain.electricEngine.recuperationTotal\",\"vehicle.drivetrain.electricEngine.remainingElectricRange\",\"vehicle.drivetrain.electricEngine.charging.timeRemaining\",\"vehicle.drivetrain.electricEngine.charging.hvStatus\",\"vehicle.drivetrain.electricEngine.charging.lastChargingReason\",\"vehicle.drivetrain.electricEngine.charging.lastChargingResult\",\"vehicle.powertrain.electric.battery.preconditioning.manualMode.statusFeedback\",\"vehicle.drivetrain.electricEngine.charging.reasonChargingEnd\",\"vehicle.powertrain.electric.battery.stateOfCharge.target\",\"vehicle.body.chargingPort.lockedStatus\",\"vehicle.drivetrain.electricEngine.charging.level\",\"vehicle.powertrain.electric.battery.stateOfHealth.displayed\",\"vehicle.vehicleIdentification.basicVehicleData\",\"vehicle.drivetrain.batteryManagement.batterySizeMax\",\"vehicle.drivetrain.batteryManagement.maxEnergy\",\"vehicle.powertrain.electric.battery.charging.power\",\"vehicle.drivetrain.electricEngine.charging.status\"]}",
         "payloadType": "json",
-        "x": 1380,
-        "y": 1060,
+        "x": 1420,
+        "y": 920,
         "wires": [
             [
                 "c5940654bc0e93f3"
@@ -563,19 +563,18 @@
         "type": "function",
         "z": "8e49a2eb.1c1a3",
         "name": "set access_token",
-        "func": "msg.headers.Authorization = \"Bearer \" + global.get(\"bmw_cardata.access_token\")\nreturn msg;",
+        "func": "msg.headers.Authorization = \"Bearer \" + global.get(\"bmw_cardata.access_token\");\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1590,
-        "y": 1060,
+        "x": 1630,
+        "y": 920,
         "wires": [
             [
-                "fea592acfbb30322",
-                "af635a06e5a58d49"
+                "fea592acfbb30322"
             ]
         ]
     },
@@ -592,8 +591,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1990,
-        "y": 1060,
+        "x": 2030,
+        "y": 900,
         "wires": []
     },
     {
@@ -612,11 +611,12 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1790,
-        "y": 1060,
+        "x": 1830,
+        "y": 920,
         "wires": [
             [
-                "af635a06e5a58d49"
+                "af635a06e5a58d49",
+                "09abf82ac8814420"
             ]
         ]
     },
@@ -626,8 +626,8 @@
         "z": "8e49a2eb.1c1a3",
         "name": "Manual authorization via the url and user_code required!",
         "info": "",
-        "x": 1620,
-        "y": 720,
+        "x": 1660,
+        "y": 560,
         "wires": []
     },
     {
@@ -657,8 +657,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 1370,
-        "y": 1120,
+        "x": 1410,
+        "y": 1020,
         "wires": [
             [
                 "f4206780c5a6e0bf"
@@ -670,18 +670,21 @@
         "type": "function",
         "z": "8e49a2eb.1c1a3",
         "name": "set url",
-        "func": "msg.url = msg.url + global.get(\"bmw_cardata.containerId\")\nmsg.headers.Authorization = \"Bearer \" + global.get(\"bmw_cardata.access_token\")\nreturn msg;",
-        "outputs": 1,
+        "func": "var containerId = global.get(\"bmw_cardata.containerId\");\n\nif (containerId) {\n    msg.url = msg.url + containerId;\n    msg.headers.Authorization = \"Bearer \" + global.get(\"bmw_cardata.access_token\");\n    return [msg,];\n} else {\n    return [,msg];\n}",
+        "outputs": 2,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1550,
-        "y": 1120,
+        "x": 1590,
+        "y": 1020,
         "wires": [
             [
                 "d11707a799458a90"
+            ],
+            [
+                "6e6ba43ca625e115"
             ]
         ]
     },
@@ -698,8 +701,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1900,
-        "y": 1120,
+        "x": 1940,
+        "y": 1000,
         "wires": []
     },
     {
@@ -718,8 +721,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1710,
-        "y": 1120,
+        "x": 1750,
+        "y": 1000,
         "wires": [
             [
                 "94fa490cf2bbdba9"
@@ -738,8 +741,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1580,
-        "y": 800,
+        "x": 1620,
+        "y": 640,
         "wires": [
             [
                 "f7c3a3d257fe2ad3"
@@ -778,8 +781,8 @@
         "topic": "",
         "payload": "{\"response_type\":\"device_code\",\"scope\":\"authenticate_user openid cardata:streaming:read cardata:api:read\",\"code_challenge_method\":\"S256\"}",
         "payloadType": "json",
-        "x": 1390,
-        "y": 800,
+        "x": 1430,
+        "y": 640,
         "wires": [
             [
                 "df2f4207f7fafdf9"
@@ -812,8 +815,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1770,
-        "y": 800,
+        "x": 1810,
+        "y": 640,
         "wires": [
             [
                 "0a1020196ae288af"
@@ -831,8 +834,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 2320,
-        "y": 920,
+        "x": 2360,
+        "y": 760,
         "wires": [
             []
         ]
@@ -848,8 +851,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 2880,
-        "y": 1000,
+        "x": 2600,
+        "y": 840,
         "wires": [
             []
         ]
@@ -874,8 +877,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1770,
-        "y": 980,
+        "x": 1810,
+        "y": 820,
         "wires": [
             [
                 "444936b78b25de8c"
@@ -897,8 +900,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 1940,
-        "y": 1000,
+        "x": 1980,
+        "y": 840,
         "wires": [
             [
                 "2a3362c04cdf43eb"
@@ -917,12 +920,96 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2150,
-        "y": 1000,
+        "x": 2190,
+        "y": 840,
         "wires": [
             [
                 "b9a406ec27382ec0"
             ]
+        ]
+    },
+    {
+        "id": "6e6ba43ca625e115",
+        "type": "file in",
+        "z": "8e49a2eb.1c1a3",
+        "name": "",
+        "filename": "./containerId",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 1750,
+        "y": 1040,
+        "wires": [
+            [
+                "4ce2e25f7d8aab7b"
+            ]
+        ]
+    },
+    {
+        "id": "4ce2e25f7d8aab7b",
+        "type": "function",
+        "z": "8e49a2eb.1c1a3",
+        "name": "get refresh_token",
+        "func": "global.set(\"bmw_cardata.containerId\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1950,
+        "y": 1040,
+        "wires": [
+            [
+                "f4206780c5a6e0bf"
+            ]
+        ]
+    },
+    {
+        "id": "09abf82ac8814420",
+        "type": "change",
+        "z": "8e49a2eb.1c1a3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "bmw_cardata.containerId",
+                "pt": "global",
+                "to": "payload.containerId",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2080,
+        "y": 940,
+        "wires": [
+            [
+                "4c39381631f8950c"
+            ]
+        ]
+    },
+    {
+        "id": "4c39381631f8950c",
+        "type": "file",
+        "z": "8e49a2eb.1c1a3",
+        "name": "",
+        "filename": "./containerId",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 2330,
+        "y": 940,
+        "wires": [
+            []
         ]
     }
 ]
