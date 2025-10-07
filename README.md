@@ -10,7 +10,7 @@ After struggling to find an alternative to the discontinued API used in the [bim
 
 
 ### Cardata
-This project assumes, you have successfully created a BMW Cardata Account, if you didn't, follow [this doc](https://bmw-cardata.bmwgroup.com/customer/public/api-documentation/Id-Technical-registration). The Client ID (later called client_id), which is shown after following [Step 2](https://bmw-cardata.bmwgroup.com/customer/public/api-documentation/Id-Technical-registration_Step-1) of the doc, is needed later on.
+This project assumes, you have successfully created a BMW Cardata Account, if you didn't, follow [this doc](https://bmw-cardata.bmwgroup.com/customer/public/api-documentation/Id-Technical-registration_Step-1). The Client ID (later called client_id), which is shown after following [Step 2](https://bmw-cardata.bmwgroup.com/customer/public/api-documentation/Id-Technical-registration_Step-2) of the doc, is needed later on.
 
 
 ### Node-RED settings file (`settings.js`)
@@ -45,10 +45,10 @@ Hit the inject once, it returns a bunch of stuff, we focus on the user_code whic
 ### Generate Token
 Use the `Generate Token` Inject to generate your first access token.
 
-### Refresh Token
+### [Refresh Token](https://bmw-cardata.bmwgroup.com/customer/public/api-documentation/Id-Technical-registration_Step-4)
 You do not need to use the `Refresh Token` Inject manually, it is set to run every 40 minutes.
 
-### Create Container
+### [Create Container](https://bmw-cardata.bmwgroup.com/customer/public/api-documentation/Id-CarData-API_Additional-information)
 Trigger the `Create Container` inject to create a via the API's POST endpoint.
 
 ### Polling Container
