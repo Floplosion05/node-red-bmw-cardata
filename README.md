@@ -37,7 +37,7 @@ To import the flows copy the json data above or from the [flows.json file](flows
 ## Usage
 
 1. ### Adding Client ID and VIN
-After importing the flows paste in the earlier copied client_id in the 3 change nodes that are called `YOUR CLIENT_ID` and paste in your cars VIN in the `YOUR VIN` Inject (msg.url field).
+After importing the flows add the earlier copied client_id in the 3 change nodes that are called `YOUR CLIENT_ID` and paste in your cars VIN in the `YOUR VIN` Inject (msg.url field).
 
 2. ### [Authenticate Device](https://bmw-cardata.bmwgroup.com/customer/public/api-documentation/Id-Technical-registration_Step-3)
 Hit the inject once, it returns a bunch of stuff, we focus on the user_code which is needed to manually authenticate the access. Visit the url shown in the debug panel, log in and paste the user_code in the text input.
